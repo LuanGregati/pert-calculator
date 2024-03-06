@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cálculo PERT</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/styles.css" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="valores">
+                <h1>
+                    <ion-icon name="calculator-outline" style="position: relative; top: 5px;"></ion-icon>
+                    Cálculo de PERT
+                </h1>
+                <div class="divInput">
+                    <label>Provável</label>
+                    <input type="number" id="provavel" class="inputValor" placeholder="0" />
+                </div>
+    
+                <div class="divInput">
+                    <label>Otimista</label>
+                    <input type="number" id="otimista" class="inputValor" placeholder="0" />
+                </div>
+    
+                <div class="divInput">
+                    <label>Pessimista</label>
+                    <input type="number" id="pessimista" class="inputValor" placeholder="0" />
+                </div>
+
+                <div>
+                    <button id="btnCalcular" onclick="calcularPert()">Calcular</button>
+                </div>
+
+                <div id="divResultado">
+                    <ion-icon name="time-outline" style="position: relative; top: 2px;"></ion-icon>
+                    <span id="resultado">PERT: 0h</span>
+                </div>
+            </div>
+            <div id="rodape">
+                Desenvolvido por <a href="https://github.com/LuanGregati" target="_blank">Luan Gregati</a>
+                <ion-icon name="logo-github" style="position: relative; top: 2px;"></ion-icon>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="./script.js"></script>
+
+        <!-- Ion Icons -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
