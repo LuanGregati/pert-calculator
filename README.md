@@ -17,7 +17,7 @@ PERT = (Otimista + 4 * Provável + Pessimista) / 6
 
 ## Como usar
 
-Acesse o link: https://luangregati.github.io/pert_calculation/
+Acesse o link: [https://luangregati.github.io/pert-calculator/]()
 
 ## Contribuindo
 
